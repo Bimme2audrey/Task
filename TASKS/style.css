@@ -1,0 +1,42 @@
+
+*{
+    box-sizing: border-box;
+}
+.column{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+body{ 
+    background:linear-gradient(-45deg, #D9A7C7, #FFFCDC, #5B86E5, #E100FF );
+    background-size: 400% 400%;
+    width:100%;
+    height: 100vh;
+   animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+table,th, td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+ }
+ fieldset{
+    margin-right: 25%;
+ }
+ @media screen and (max-width:600px){
+    .column{
+        width: 100%;
+    }
+    
+ }
